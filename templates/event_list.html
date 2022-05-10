@@ -1,0 +1,9 @@
+{%extends 'layout.html' %}
+
+{% block body %}
+    <h1>Events</h1>
+    <ul class="list-group">
+        {% for event in events %}
+            <li class="list-group-item"><b><a href="event/{{event.id}}">{{ event.nombre}}</a></b> {{event.fecha}} creado por {{event.autor}}</li>    
+        {% endfor %}
+{% endblock %}
