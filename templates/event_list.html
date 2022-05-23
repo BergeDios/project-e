@@ -4,6 +4,6 @@
     <h1>Events</h1>
     <ul class="list-group">
         {% for event in events %}
-            <li class="list-group-item"><b><a href="event/{{event.id}}">{{ event.nombre}}</a></b> {{event.fecha}} creado por {{event.autor}}</li>    
+            <li class="list-group-item"><b><a href="event/{{event._id}}">{{event.nombre}}</a></b> {{event.fecha}} creado por {{event.user_id}}</ali>    
         {% endfor %}
 {% endblock %}
